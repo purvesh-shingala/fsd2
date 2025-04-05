@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">Hello</p>
+    <button type="button" onclick="fu1()">Click Me`</button>
+    <script>
+        function fu1(){
+            n = 16
+            function fu() {
+                m = 50
+                x = document.getElementById("demo");
+                x.style.color = 'blue';
+                x.style.fontSize = n + "px";
+
+                if (n < m) {
+                    n++
+                }
+            }
+            setInterval(fu, 100)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const person =
+
+            [
+
+                {
+
+                    name: "PQR", age: 38
+
+                },
+
+                {
+
+                    name: "ABC", age: 35
+
+                },
+
+                {
+
+                    name: "XYZ", age: 47
+
+                }
+
+            ]
+                age1=person[0].age
+                name=''
+              
+            for(i=0;i<person.length;i++){
+                
+                if(person[i].age>age1){
+                    name=person[i].name
+                    age1=person[i].age
+                }
+            }
+
+            console.log(name+" : "+age1)
+    </script>
+</body>
+
+</html>

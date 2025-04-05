@@ -1,0 +1,39 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var msg=function(){
+            document.write('Hello World')
+        }
+        setTimeout(msg,3000)
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function mydisp(sum){
+            document.getElementById("demo").innerHTML=sum;
+        }
+        function mycal(a,b,myval){
+            var sum=a+b;
+            myval(sum)
+        }
+
+        mycal(5,10,mydisp)
+    </script>
+</body>
+</html>

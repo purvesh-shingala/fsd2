@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="fu()">Click Me</button>
+    <script>
+
+
+        function fu() {
+            const obj = JSON.parse(`{"name":"xyz","age":"17","dob":"1997-03-14"}`);
+
+            a = new Date(obj.dob);
+
+            document.getElementById('demo').innerHTML = 'Birt Day of ' + obj.name + ' is ' + a
+        }
+    </script>
+</body>
+
+</html>
